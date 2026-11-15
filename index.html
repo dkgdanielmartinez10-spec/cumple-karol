@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz cumpleaños, Karol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <main class="contenedor">
+    <p class="etiqueta">✨ Un día muy especial ✨</p>
+    <h1>¡Feliz cumpleaños,<br><span>Karol!</span></h1>
+    <p class="intro">Hoy el mundo tiene una razón más para brillar: celebrar tu vida.</p>
+
+    <div class="acciones">
+      <button id="botonSorpresa" class="boton" type="button">🎁 Abrir mi sorpresa</button>
+      <button id="botonMusica" class="boton boton-secundario" type="button" aria-pressed="false">🎵 Música: Off</button>
+    </div>
+
+    <section id="sorpresa" class="sorpresa oculto" aria-live="polite">
+      <div class="corazon">💖</div>
+      <h2>Para ti, Karol</h2>
+      <p>
+        Que la vida te regale muchos motivos para sonreír, sueños por cumplir,
+        caminos maravillosos y personas que te quieran bonito. Nunca dejes de
+        disfrutar cada aventura y de ser esa persona especial que eres.
+      </p>
+      <p class="firma">Con mucho cariño, tu hermano ❤️</p>
+    </section>
+
+    <section class="recuerdos">
+      <h2>Unos recuerdos para ti <span>🌟</span></h2>
+      <p class="subtitulo">Momentos que merecen quedarse para siempre.</p>
+      <div class="galeria">
+        <button class="foto" type="button" data-src="imagenes/karol-moto-1.jpeg" aria-label="Ampliar primera fotografía">
+          <img src="imagenes/karol-moto-1.jpeg" alt="Karol disfrutando de un paseo en motocicleta">
+          <span>Que nunca falten las aventuras ✨</span>
+        </button>
+        <button class="foto" type="button" data-src="imagenes/karol-moto-2.jpeg" aria-label="Ampliar segunda fotografía">
+          <img src="imagenes/karol-moto-2.jpeg" alt="Karol junto a su motocicleta">
+          <span>Siempre brillando a tu manera 💜</span>
+        </button>
+      </div>
+    </section>
+
+    <footer>Hecho con mucho amor para Karol · 💫</footer>
+  </main>
+
+  <div id="visor" class="visor oculto" role="dialog" aria-modal="true" aria-label="Fotografía ampliada">
+    <button id="cerrarVisor" class="cerrar" type="button" aria-label="Cerrar">×</button>
+    <img id="fotoGrande" src="" alt="Fotografía ampliada de Karol">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
